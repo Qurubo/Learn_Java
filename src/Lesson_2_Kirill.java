@@ -1,5 +1,8 @@
 /**
  * Created by qurub on 22.02.2016.
  */
-public class Lesson_2_Kirill {
+abstract public class Lesson_2_Kirill {
+   abstract public void name();/*{
+        System.out.println("Я сучка Кирилла");
+    }*/
 }
