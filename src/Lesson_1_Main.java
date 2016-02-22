@@ -1,9 +1,9 @@
 /**
  * Created by qurub on 22.02.2016.
  */
-public class Main {
+public class Lesson_1_Main {
     public static void main(String[] args) {
-        Reader r =new Reader();
+        Lesson_1_Reader r =new Lesson_1_Reader();
         r.Scan();
         r.i=count(r.i);
         r.k=count(r.k);

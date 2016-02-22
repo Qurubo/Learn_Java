@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by qurub on 22.02.2016.
  */
-public class Reader {
+public class Lesson_1_Reader {
     int k;
     int i;
     public void Scan(){
