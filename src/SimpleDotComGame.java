@@ -1,19 +1,28 @@
 public class SimpleDotComGame {
     public static void main(String[] args) {
-        SimpleDotCom dot = new SimpleDotCom();
+        int numOfGuesses=0;
 
-        int []locations={2,3,4};
+        GameHelper helper=new GameHelper();
+        SimpleDotCom theDotCom =new SimpleDotCom();
 
-        dot.setLocationCells(locations);
+        int randomNum=(int)(Math.random()*5);
 
-        String userGuess="2";
-        String result =dot.checkYourself(userGuess);
+        int[] locations={randomNum,randomNum+1,randomNum+2};
 
-        String testResult="Неудача";
+        theDotCom.setLocationCells(locations);
 
-        if(result.equals("Попал")){
-            testResult="Пройден";
+        boolean isAlive=true;
+
+        while(isAlive){
+            String guess = helper.getUserInput("Введите число");
+
+            String result = theDotCom.checkYourself(guess);
+
+            numOfGuesses++;
+            if(result.equals("Потопил")){
+                isAlive=false;
+                System.out.println("Вам потребовалось "+ numOfGuesses+" попыток(и)");
+            }
         }
-        System.out.println(testResult);
     }
 }
