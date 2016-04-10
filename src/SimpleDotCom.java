@@ -1,5 +1,6 @@
-/**
- * Created by qurub on 10.04.2016.
- */
 public class SimpleDotCom {
+    public static void main(String[] args) {
+
+    }
 }
+
