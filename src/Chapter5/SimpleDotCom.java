@@ -1,3 +1,5 @@
+package Chapter5;
+
 public class SimpleDotCom {
     int[] locationCells;
     int numOfHits=0;
