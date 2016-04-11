@@ -1,3 +1,5 @@
+package Chapter6;
+
 import java.util.ArrayList;
 
 /**
@@ -5,10 +7,13 @@ import java.util.ArrayList;
  */
 public class DotCom {
     private ArrayList<String> locationCells;
-    int numOfHits=0;
-    void setLocationCells(ArrayList<String> locs){
+    private String name;
+    public void setLocationCells(ArrayList<String> locs){
 
         locationCells =locs;
+    }
+    public void setName(String n){
+        name=n;
     }
     public String checkYourself(String userInput){
 
@@ -18,6 +23,7 @@ public class DotCom {
             locationCells.remove(index);
             if(locationCells.isEmpty()){
                 result="Потопил";
+                System.out.println("Ой! Вы потопили "+name+"  :(");
             }else result="Попал";
         }
 
