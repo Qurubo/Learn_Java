@@ -1,7 +1,7 @@
 package Chapter6;
 
 import java.util.ArrayList;
-
+//
 public class DotCom {
     private ArrayList<String> locationCells;
     private String name;
