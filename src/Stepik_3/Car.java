@@ -56,6 +56,81 @@ public class Car {
     }
 
     public static void moveRobot(Robot robot, int toX, int toY) {
-        // your code
+        if(toY>robot.getY()){
+            switch (robot.getDirection()){
+                case DOWN:
+                    robot.turnLeft();
+                    robot.turnLeft();
+                    break;
+                case UP:
+
+                    break;
+                case LEFT:
+                    robot.turnRight();
+                    break;
+                case RIGHT:
+                    robot.turnLeft();
+                    break;
+            }
+
+        }
+        if(toY<robot.getY()) {
+            switch (robot.getDirection()) {
+                case DOWN:
+
+                    break;
+                case UP:
+                    robot.turnRight();
+                    robot.turnRight();
+                    break;
+                case LEFT:
+                    robot.turnLeft();
+                    break;
+                case RIGHT:
+                    robot.turnRight();
+                    break;
+            }
+        }
+        while (toY!=robot.getY()){
+            robot.stepForward();
+        }
+        if(toX>robot.getX()){
+            switch (robot.getDirection()){
+                case DOWN:
+                    robot.turnLeft();
+                    break;
+                case UP:
+                    robot.turnRight();
+                    break;
+                case LEFT:
+                    robot.turnLeft();
+                    robot.turnLeft();
+                    break;
+                case RIGHT:
+
+                    break;
+            }
+        }
+        if(toX<robot.getX()){
+            switch (robot.getDirection()){
+                case DOWN:
+                    robot.turnRight();
+                    break;
+                case UP:
+                    robot.turnLeft();
+                    break;
+                case LEFT:
+
+                    break;
+                case RIGHT:
+                    robot.turnRight();
+                    robot.turnRight();
+                    break;
+            }
+        }
+        while (toX!=robot.getX()){
+            robot.stepForward();
+        }
+        //System.out.println("X: "+ robot.getX()+" Y: "+robot.getY());
     }
 }
