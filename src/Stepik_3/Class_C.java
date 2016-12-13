@@ -8,7 +8,7 @@ public class Class_C {
         Class_A a = new Class_A();
         Class_B b = new Class_B();
         System.out.println("A:  "+a.Vasia(123));
-        System.out.println("B:  "+b.Vasia(123,3));
+        System.out.println("B:  "+b.Vasia(123));
 
     }
 
