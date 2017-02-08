@@ -9,6 +9,14 @@ public class Employee extends Person {
     private double salary;
     private LocalDate hireday;
 
+    /**
+     *
+     * @param name
+     * @param salary
+     * @param year
+     * @param month
+     * @param day
+     */
     public Employee(String name, double salary, int year,int month, int day) {
         super(name);
         this.salary = salary;
