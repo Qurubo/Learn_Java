@@ -16,6 +16,8 @@ public class Enums {
         if (size==Size.EXTRA_LARGE) {
             System.out.println("Good job--you paid attention to the _.");
         }
+
+
         Size[] values = Size.values();
         for (Size value : values) {
             System.out.println(value.toString()+" "+value.getAbbreviation());
