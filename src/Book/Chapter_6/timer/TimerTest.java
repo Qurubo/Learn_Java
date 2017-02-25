@@ -13,6 +13,7 @@ public class TimerTest {
     public static void main(String[] args) {
         ActionListener actionListener = new TimePrinter();
         //timer every 10 sec
+
         Timer timer = new Timer(10000,actionListener);
         timer.start();
         JOptionPane.showMessageDialog(null, "Quit program?");
