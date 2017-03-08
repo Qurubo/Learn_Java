@@ -29,7 +29,6 @@ public class LambdaTest {
         JOptionPane.showMessageDialog(null,"Quit program?");
         System.exit(0);
 
-
     }
 }
 // OLD
