@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
 public class Pool {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(5);
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 100; i++) {
             Runnable worker = new Worker("" + i);
             executor.execute(worker);
         }
@@ -20,6 +20,7 @@ public class Pool {
         System.out.println("Finished all threads");
     }
 }
+
 class Worker implements Runnable {
     private String command;
 
